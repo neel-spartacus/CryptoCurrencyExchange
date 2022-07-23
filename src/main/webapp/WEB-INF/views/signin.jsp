@@ -35,10 +35,6 @@
             <div class="pure-u-1-2">
                 <article>
                     <p>This is my solution to the Zooplus Challenge.</p>
-                    <p>Here you can see <a href="/presentation" target="_new">a presentation</a> about how is built and why I take some solutions.</p>
-                    <p><strong>SECURITY WARNING!</strong> This is not a <em>full hardened server</em> and is 
-                            not under a <em>bastion host</em>, so, although I use HTTPS and the passwords 
-                            are stored encrypted, you should not provide any real world credentials.</p>
                 </article>
             </div>
             <div class="pure-u-1-4">
@@ -63,13 +59,7 @@
         </div>
     </main>
     <footer>
-        <ul>
-            <li>&copy;2016 github.com/jomoespe&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            <li><a href="https://github.com/jomoespe/zooplus-challenge"    target="_new">GitHub</a></li>
-            <li><a href="https://travis-ci.org/jomoespe/zooplus-challenge" target="_new">Travis IC</a></li>
-            <li><strong>Monitoring and management:</strong></li>
-            <li><a href="/health"   target="_new">health</a></li>
-        </ul>
+
     </footer>
 </body>
 </html>

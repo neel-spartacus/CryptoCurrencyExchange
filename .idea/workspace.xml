@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68ca56ec-d323-4e61-9d66-64283d95aafa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CryptoCurrencyExchange.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JenkinsFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/authentication/SimpleAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/authentication/UserAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/configuration/PasswordEncoderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/PresentationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/entity/ExchangeRate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/model/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/model/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/repository/CryptoExchangeRateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/repository/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/ExchangeRateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/GeoLookUpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/GetExchangeRateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/SimpleUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrencyExchangeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrencyExchangeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrencyResponseAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/utils/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/utils/CurrencyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rates/live-USD.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/footer.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/header.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/navigation.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/presentation/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/signin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/do.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/docker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/duke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/h2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/java.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/purecss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/spring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/stickers/travis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/images/zooplus_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/HISTORY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/base-context-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/base-context.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/base-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/buttons-core-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/buttons-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/buttons-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/forms-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/forms-nr-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/forms-nr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-core-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-responsive-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-responsive-old-ie-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-responsive-old-ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-units-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids-units.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/grids.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-core-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-dropdown-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-dropdown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-horizontal-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-horizontal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-scrollable-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-scrollable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-skin-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus-skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/menus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/pure-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/pure-nr-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/pure-nr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/pure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/tables-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/pure/0.6.0/tables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zooplus/cryptoexchange/service/CryptoDataServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zooplus/cryptoexchange/service/GeoLookUpServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrencyResponseAdaptorTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="29VfF5LEuyRxDNTgYgt2b38gJT6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Piya\Neel\Codespace\CrypotoExchange\src\main\java\com\zooplus\cryptoexchange\service\currency" />
+      <recent name="C:\Users\Piya\Neel\Codespace\CrypotoExchange\src\main\java\com\zooplus\cryptoexchange\model" />
+      <recent name="C:\Users\Piya\Neel\Codespace\CrypotoExchange\src\main\java\com\zooplus\cryptoexchange\service" />
+      <recent name="C:\Users\Piya\Neel\Codespace\CrypotoExchange\src\main\java\com\zooplus\cryptoexchange" />
+      <recent name="C:\Users\Piya\Neel\Codespace\CrypotoExchange\src\main\java\com\zooplus\cryptoexchange\controller" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zooplus.cryptoexchange.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zooplus.cryptoexchange.service" />
+      <recent name="com.zooplus.cryptoexchange" />
+      <recent name="com.zooplus.cryptoexchange.repository" />
+      <recent name="com.zooplus.cryptoexchange.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.zooplus.cryptoexchange.Application" />
+      <module name="CryptoCurrencyExchange" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zooplus.cryptoexchange.configuration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CryptoCurrencyResponseAdaptorTest.shouldConvertCryptoCurrencyExchangeResponseToExchangeRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CrypotoExchange" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zooplus.cryptoexchange.service.currency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zooplus.cryptoexchange.service.currency" />
+      <option name="MAIN_CLASS_NAME" value="com.zooplus.cryptoexchange.service.currency.CryptoCurrencyResponseAdaptorTest" />
+      <option name="METHOD_NAME" value="shouldConvertCryptoCurrencyExchangeResponseToExchangeRate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CryptoDataServiceTest.shouldReturnNegativeExchangeRateWhenCallTOExchangeAPiFails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CrypotoExchange" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zooplus.cryptoexchange.authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zooplus.cryptoexchange.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zooplus.cryptoexchange.service.CryptoDataServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnNegativeExchangeRateWhenCallTOExchangeAPiFails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CryptoDataServiceTest.shouldReturnTheLatestRanQueries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CrypotoExchange" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zooplus.cryptoexchange.authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zooplus.cryptoexchange.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zooplus.cryptoexchange.service.CryptoDataServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnTheLatestRanQueries" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeoLookUpServiceTest.shouldReturnCountryCurrencyCodeFromIpAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CrypotoExchange" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zooplus.cryptoexchange.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zooplus.cryptoexchange.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zooplus.cryptoexchange.service.GeoLookUpServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnCountryCurrencyCodeFromIpAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="JUnit.CryptoCurrencyResponseAdaptorTest.shouldConvertCryptoCurrencyExchangeResponseToExchangeRate" />
+      <item itemvalue="JUnit.CryptoDataServiceTest.shouldReturnNegativeExchangeRateWhenCallTOExchangeAPiFails" />
+      <item itemvalue="JUnit.CryptoDataServiceTest.shouldReturnTheLatestRanQueries" />
+      <item itemvalue="JUnit.GeoLookUpServiceTest.shouldReturnCountryCurrencyCodeFromIpAddress" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.CryptoCurrencyResponseAdaptorTest.shouldConvertCryptoCurrencyExchangeResponseToExchangeRate" />
+        <item itemvalue="JUnit.GeoLookUpServiceTest.shouldReturnCountryCurrencyCodeFromIpAddress" />
+        <item itemvalue="JUnit.CryptoDataServiceTest.shouldReturnTheLatestRanQueries" />
+        <item itemvalue="JUnit.CryptoDataServiceTest.shouldReturnNegativeExchangeRateWhenCallTOExchangeAPiFails" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68ca56ec-d323-4e61-9d66-64283d95aafa" name="Changes" comment="" />
+      <created>1653203074422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653203074422</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/configuration/SecurityConfiguration.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.5/spring-webmvc-5.3.5.jar!/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.class</url>
+          <line>459</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.5/spring-webmvc-5.3.5.jar!/org/springframework/web/servlet/resource/ResourceHttpRequestHandler.class</url>
+          <line>436</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/configuration/SecurityConfiguration.java</url>
+          <line>39</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CustomUserDetails.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.4.5/spring-security-web-5.4.5.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class</url>
+          <line>34</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.4.5/spring-security-web-5.4.5.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class</url>
+          <line>54</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.4.5/spring-security-web-5.4.5.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class</url>
+          <line>74</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.5/spring-security-core-5.4.5.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.class</url>
+          <line>119</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.5/spring-security-core-5.4.5.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.class</url>
+          <line>217</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.5/spring-security-core-5.4.5.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.class</url>
+          <line>173</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.5/spring-security-core-5.4.5.jar!/org/springframework/security/access/vote/AffirmativeBased.class</url>
+          <line>21</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.4.5/spring-security-web-5.4.5.jar!/org/springframework/security/web/access/expression/WebExpressionVoter.class</url>
+          <line>28</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.5/spring-security-core-5.4.5.jar!/org/springframework/security/access/expression/ExpressionUtils.class</url>
+          <line>17</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/5.3.5/spring-expression-5.3.5.jar!/org/springframework/expression/spel/standard/SpelExpression.class</url>
+          <line>186</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.5/spring-web-5.3.5.jar!/org/springframework/web/client/RestTemplate.class</url>
+          <line>195</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UriBuilderTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrencyExchangeService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/GeoLookUpService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/GeoLookUpService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/utils/CurrencyUtils.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrencyExchangeService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/currency/CryptoCurrencyResponseAdaptor.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/CryptoRateAgent.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zooplus/cryptoexchange/service/CryptoDataServiceTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/controller/AppController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/authentication/UserAgent.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/authentication/UserAgent.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/configuration/SecurityConfig.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/service/SimpleUserDetailsService.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zooplus/cryptoexchange/authentication/UserAgent.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.4.5/spring-security-core-5.4.5.jar!/org/springframework/security/core/userdetails/UserDetailsService.class</url>
+          <line>8</line>
+          <properties class="org.springframework.security.core.userdetails.UserDetailsService" method="loadUserByUsername">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

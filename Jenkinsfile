@@ -21,15 +21,23 @@ pipeline {
 
     // Build
     stage('Build') {
-      agent {
-        label 'node'
-      }
       steps {
         checkout scm: [$class: 'GitSCM', branches: [[name: '*/develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'stash-jenkins-access-key', url: 'https://github.com/neel-spartacus/CryptoCurrencyExchange.git']]])
+        sh 'mvn -Dmaven.test.failure.ignore=true clean install'
+      }
+      post {
+        success {
+             junit 'target/surefire-reports/**/*.xml'
+        }
       }
     }
 
     stage('Test') {
+            when{
+               expression{
+                  BRANCH_NAME== 'develop' || BRANCH_NAME== 'master'
+               }
+            }
             steps {
                 /* `make check` returns non-zero on test failures,
                 * using `true` to allow the Pipeline to continue nonetheless
@@ -38,39 +46,13 @@ pipeline {
                 junit '**/target/*.xml'
             }
         }
-    // Static Code Analysis
-    stage('Static Code Analysis') {
-      agent {
-        label 'node'
-      }
-      steps {
-        deleteDir()
-        checkout scm
-        sh "echo 'Run Static Code Analysis'"
-      }
-    }
+    stage('deploy') {
 
-    // Unit Tests
-    stage('Unit Tests') {
-      agent {
-        label 'node'
-      }
       steps {
-        deleteDir()
-        checkout scm
-        sh "echo 'Run Unit Tests'"
-      }
-    }
-
-    // Acceptance Tests
-    stage('Acceptance Tests') {
-      agent {
-        label 'node'
-      }
-      steps {
-        deleteDir()
-        checkout scm
-        sh "echo 'Run Acceptance Tests'"
+          echo 'Deploying the application'
+          withCredentials([
+              usernamePassword(credentials:'server-credentials', usernameVariable: USER, passwordVariable: PWD)
+          ])
       }
     }
 

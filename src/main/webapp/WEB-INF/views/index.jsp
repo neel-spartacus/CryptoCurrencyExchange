@@ -34,10 +34,19 @@
             <h2>the solution to the challenge</h2>
         </div>
         <div class="pure-u-1-4">
-            <form id="logout" action="logout" method="post" >
+            <form id="logout" name="logout" action="logout" method="post" >
                 <label>Hi ${pageContext.request.userPrincipal.name}!</label>
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
                 <button id="logout">logout</button>
+                 <script>
+              $(document).ready(function() {
+                                $('#logout').click(function() {
+                                         if (localStorage.selectVal) {
+                                                   localStorage.clear();
+                                          }
+                                         })
+                                     });
+                 </script>
             </form>
         </div>
     </header>
@@ -48,7 +57,7 @@
                 <h3>get a current exchange rate</h3>
                 <form action="rate" class="pure-form" name="rateForm">
                     <fieldset>
-                    <select name="target">
+                    <select name="target" id="target" onchange="onChange()">
                         <c:forEach var="currency" items="${currencies}"><option value="${currency.currencyCode}"> ${currency.currencyCode} ${currency.displayName}</option>
                         </c:forEach>
                     </select>
@@ -56,11 +65,16 @@
                      <input type="text" id="ipaddress" name="clientIp" placeholder="IP">
                      <script>
                      $(document).ready(function() {
+                      if (localStorage.selectVal) {
+                           $('#target').val( localStorage.selectVal );
+                       }
                          $('#submit').click(function() {
                               if(document.getElementById('ipaddress').value===''){
                                 document.getElementById('ipaddress').value=ip;
                               };
                          })
+
+
                      });
                      $("#ipaddress").on("blur", function () {
                             if ($(this).val().trim().length == 0) {
@@ -69,17 +83,18 @@
                         });
                         //trigger blur once for the initial setup:
                         $("#ipaddress").trigger("blur");
+
+                      function onChange(){
+                           var currentVal=document.getElementById('target').value;
+                           localStorage.setItem('selectVal', currentVal );
+                        }
                      </script>
                     <button class="pure-button button-main" id="submit">Get rate</button>
                     </fieldset>
                     <c:if test="${empty error}"><label>Current Unit Price is: <strong>${rate.rate}</strong> ${rate.target}</label></c:if>
                     <%--c:if test="${not empty error}"><div>${error}</div></c:if--%>
                     
-                    
-                    <%-- Para mostras los errores
-                    <c:if test="${not empty error}"><div>${error}</div></c:if>
-                    <c:if test="${not empty message}"><div>${message}</div></c:if>
-                    --%>
+
                 </form>
             </div>
             <div class="pure-u-1-8"></div>                

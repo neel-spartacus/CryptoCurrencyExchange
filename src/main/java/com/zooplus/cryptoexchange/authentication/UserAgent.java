@@ -26,14 +26,19 @@ public class UserAgent {
     private PasswordEncoder passwordEncoder;
 
     public boolean signup(final String firstname, final String lastname, final String email, final String bday, final String password) {
-        User newUser = new User();
-        newUser.setEmail(email);
-        newUser.setPassword(new BCryptPasswordEncoder().encode(password));
-        newUser.setEnabled(Boolean.TRUE);
-        newUser.setFirstname(firstname);
-        newUser.setLastname(lastname);
-        newUser.setBirthday(bday);
-        return userRepository.save(newUser) != null?true:false;
+
+        User user= userRepository.findByEmail(email);
+        if(Objects.nonNull(user)){
+            return false;
+        }
+        user = new User();
+        user.setEmail(email);
+        user.setPassword(new BCryptPasswordEncoder().encode(password));
+        user.setEnabled(Boolean.TRUE);
+        user.setFirstname(firstname);
+        user.setLastname(lastname);
+        user.setBirthday(bday);
+        return userRepository.save(user) != null?true:false;
 
     }
 

@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="style/site.css">
     <link rel="shortcut icon" href="/favicon.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 <body>
     <header class="pure-g">
@@ -47,12 +50,16 @@
                         <input type="date"  name="bday"       class="pure-input-1" placeholder="Birth day">
                     </fieldset>
                     <fieldset class="pure-group">
-                        <input type="password" name="password"   class="pure-input-1" placeholder="Password" >
-                        <input type="password" name="repassword" class="pure-input-1" placeholder="Re-enter password">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                        <input type="password" name="password" id="password"  class="pure-input-1" placeholder="Password" >
+                        <input type="password" name="repassword" id="repassword" class="pure-input-1" placeholder="Re-enter password">
+                        <span id='message'></span>
+
                         <!-- Address (street, zip, city & country)  -->
                     </fieldset>
                     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
                     <button type="submit" class="pure-button pure-input-1 pure-button-primary">Sign Up</button>
+
                 </form>
             </div>
             <div class="pure-u-1-8"></div>

@@ -3,16 +3,13 @@ package com.zooplus.cryptoexchange.configuration;
 import com.zooplus.cryptoexchange.authentication.SimpleAuthenticationFilter;
 import com.zooplus.cryptoexchange.service.SimpleUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -36,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .addFilterBefore(authenticationFilter(), UsernamePasswordAuthenticationFilter.class).
                 authorizeRequests().antMatchers(GET, "/favicon.ico", "/presentation", "/style/**", "/images/**", "/script/**").permitAll()
-                .antMatchers(POST, "/signup").permitAll().antMatchers(GET, "/rate").permitAll().antMatchers(POST, "/signin").hasAnyRole("USER", "ANONYMOUS").anyRequest().authenticated() // .hasAnyRole("user")
+                .antMatchers(POST, "/signup").permitAll().antMatchers(GET, "/rate").hasAnyRole("USER", "ANONYMOUS").antMatchers(POST, "/signin").hasAnyRole("USER", "ANONYMOUS").anyRequest().authenticated() // .hasAnyRole("user")
                 .and().formLogin().loginPage("/signin").defaultSuccessUrl("/index").failureUrl("/signin?error").permitAll().and().logout()
                 .logoutSuccessUrl("/signin").permitAll()
                 // .and()

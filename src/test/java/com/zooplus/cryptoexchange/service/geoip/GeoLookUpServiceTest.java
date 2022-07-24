@@ -1,4 +1,4 @@
-package com.zooplus.cryptoexchange.service;
+package com.zooplus.cryptoexchange.service.geoip;
 
 import com.zooplus.cryptoexchange.model.Country;
 import com.zooplus.cryptoexchange.service.geoip.GeoLookUpService;

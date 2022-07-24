@@ -36,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .addFilterBefore(authenticationFilter(), UsernamePasswordAuthenticationFilter.class).
                 authorizeRequests().antMatchers(GET, "/favicon.ico", "/presentation", "/style/**", "/images/**", "/script/**").permitAll()
-                .antMatchers(POST, "/signup").permitAll().antMatchers(GET, "/rate").permitAll().antMatchers(POST, "/trySignin").permitAll().anyRequest().authenticated() // .hasAnyRole("user")
+                .antMatchers(POST, "/signup").permitAll().antMatchers(GET, "/rate").permitAll().antMatchers(POST, "/signin").hasAnyRole("USER", "ANONYMOUS").anyRequest().authenticated() // .hasAnyRole("user")
                 .and().formLogin().loginPage("/signin").defaultSuccessUrl("/index").failureUrl("/signin?error").permitAll().and().logout()
                 .logoutSuccessUrl("/signin").permitAll()
                 // .and()

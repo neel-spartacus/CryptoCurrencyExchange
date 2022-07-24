@@ -68,7 +68,7 @@ public class AppController {
         return "signin";
     }
 
-    @RequestMapping(value="/trySignin", method=POST)
+    @RequestMapping(value="/signin", method=POST)
     public String signIn(@RequestParam(value="username", required=false) String username,
                         @RequestParam(value="password",required=false) String password,
                         final Model model){

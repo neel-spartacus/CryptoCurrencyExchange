@@ -12,6 +12,11 @@ pipeline {
     git_commit_author_email = ''
   }
 
+   tools {
+          jdk 'jdk1.8'
+          maven 'mvn3.5.0'
+      }
+
   stages {
 
     // Build
@@ -20,8 +25,7 @@ pipeline {
         label 'node'
       }
       steps {
-        deleteDir()
-        checkout scm
+        checkout scm: [$class: 'GitSCM', branches: [[name: '*/develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'stash-jenkins-access-key', url: 'https://github.com/neel-spartacus/CryptoCurrencyExchange.git']]])
       }
     }
 

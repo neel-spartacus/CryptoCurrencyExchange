@@ -3,6 +3,7 @@ package com.zooplus.cryptoexchange.service;
 
 import com.zooplus.cryptoexchange.entity.ExchangeRate;
 import com.zooplus.cryptoexchange.repository.CryptoExchangeRateRepository;
+import com.zooplus.cryptoexchange.service.geoip.GeoLookUpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

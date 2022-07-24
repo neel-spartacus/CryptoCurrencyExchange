@@ -9,7 +9,6 @@
 
     <title>Zooplus Challenge - Sign Up The solution</title>
     <meta name="description" content="Zooplus Challenge solution">
-    <meta name="author" content="github.com/jomoespe">
 
     <link rel="stylesheet" href="style/site.css">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -21,11 +20,12 @@
             <h2>the solution to the challenge</h2>
         </div>
         <div class="pure-u-1-2">
-            <form name="signin" action="trySignin" method="post">
+            <form name="signin" action="signin" method="post">
                 <input type="text" name="username" placeholder="Email">
                 <input type="password" name="password" placeholder="Password">
                 <button type="submit">Log In</button>
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+                  <c:if test="${not empty error}"><div>Invalid Username or Password</div></c:if>
             </form>
         </div>
     </header>

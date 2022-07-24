@@ -1,6 +1,7 @@
 package com.zooplus.cryptoexchange.service;
 
 import com.zooplus.cryptoexchange.model.Country;
+import com.zooplus.cryptoexchange.service.geoip.GeoLookUpService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

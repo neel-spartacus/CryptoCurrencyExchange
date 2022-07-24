@@ -92,7 +92,7 @@
                     <button class="pure-button button-main" id="submit">Get rate</button>
                     </fieldset>
                     <c:if test="${empty error}"><label>Current Unit Price is: <strong>${rate.rate}</strong> ${rate.target}</label></c:if>
-                    <%--c:if test="${not empty error}"><div>${error}</div></c:if--%>
+                    <c:if test="${not empty error}"><div>${error}</div></c:if>
                     
 
                 </form>

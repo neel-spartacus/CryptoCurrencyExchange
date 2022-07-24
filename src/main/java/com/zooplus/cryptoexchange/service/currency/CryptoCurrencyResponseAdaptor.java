@@ -17,10 +17,10 @@ public class CryptoCurrencyResponseAdaptor implements CryptoRateAdaptor<CryptoCu
 
     @Override
     public ExchangeRate adapt(final CryptoCurrencyExchangeResponse response) {
-        if (response.getRates()!=null && response.getRates().size()==1) {
+        if (response.getRates() != null && response.getRates().size() == 1) {
             Map.Entry<String, Float> exchangeRate = response.getRates().entrySet().iterator().next();
             String target = response.getTarget();
-            Float  value  = exchangeRate.getValue();
+            Float value = exchangeRate.getValue();
 
             ExchangeRate rate = new ExchangeRate();
             rate.setSource(exchangeRate.getKey());

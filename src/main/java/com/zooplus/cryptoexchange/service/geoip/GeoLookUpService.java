@@ -24,14 +24,13 @@ public class GeoLookUpService {
     public GeoLookUpService() {
     }
 
-    //https://api.ipgeolocationapi.com/geolocate/
-    public Optional<String> getCurrencyOfACountryFromIpAddress(String ipAddress){
+    public Optional<String> getCurrencyOfACountryFromIpAddress(String ipAddress) {
 
         UriComponents uriComponents = UriComponentsBuilder.newInstance()
                 .scheme("https").host(API_DOMAIN)
                 .path(ipAddress).path("/").path(FORMAT).build();
 
-        Country country=restTemplate.getForObject(uriComponents.toUriString(), Country.class);
+        Country country = restTemplate.getForObject(uriComponents.toUriString(), Country.class);
 
         return Optional.ofNullable(country.getCurrency());
 

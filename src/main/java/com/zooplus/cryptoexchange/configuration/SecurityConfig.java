@@ -36,9 +36,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(POST, "/signup").permitAll().antMatchers(GET, "/rate").hasAnyRole("USER", "ANONYMOUS").antMatchers(POST, "/signin").hasAnyRole("USER", "ANONYMOUS").anyRequest().authenticated() // .hasAnyRole("user")
                 .and().formLogin().loginPage("/signin").defaultSuccessUrl("/index").failureUrl("/signin?error").permitAll().and().logout()
                 .logoutSuccessUrl("/signin").permitAll()
-                // .and()
-                // .exceptionHandling()
-                // .accessDeniedPage("/403")
                 .and().csrf();
     }
 

@@ -2,7 +2,9 @@ package com.zooplus.cryptoexchange.controller;
 
 
 import com.zooplus.cryptoexchange.authentication.UserAgent;
-import com.zooplus.cryptoexchange.service.*;
+import com.zooplus.cryptoexchange.service.CryptoDataService;
+import com.zooplus.cryptoexchange.service.CryptoRateAgent;
+import com.zooplus.cryptoexchange.service.GetExchangeRateResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

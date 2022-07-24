@@ -1,7 +1,10 @@
 package com.zooplus.cryptoexchange.entity;
 
 import jakarta.validation.constraints.NotNull;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,7 +12,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
-
 
 
 @Entity
@@ -47,9 +49,7 @@ public class User implements Serializable, UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return AuthorityUtils.createAuthorityList("USER", "SUPERUSER", "ROLE_SUPERUSER","ROLE_ANONYMOUS");
-        // return Arrays.asList(new SimpleGrantedAuthority("USER"),
-        // new SimpleGrantedAuthority("SUPERUSER"));
+        return AuthorityUtils.createAuthorityList("USER", "SUPERUSER", "ROLE_SUPERUSER", "ROLE_ANONYMOUS");
     }
 
     @Override

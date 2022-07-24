@@ -58,7 +58,7 @@ public class CryptoDataServiceTest {
         //Then
         Assert.assertNotNull(response);
         ExchangeRate exchangeRateResponse = response.getCurrent();
-        Assert.assertTrue(exchangeRateResponse.getRate().equals(10000000.00));
+        Assert.assertTrue(exchangeRateResponse.getRate().equals(10000000.00F));
         Assert.assertTrue(exchangeRateResponse.getSource().equals("INR"));
         Assert.assertTrue(exchangeRateResponse.getTarget().equals("BTC"));
 

@@ -11,8 +11,8 @@ import java.util.Map;
 @EqualsAndHashCode
 @Builder
 public class CryptoCurrencyExchangeResponse {
-    private Long               timestamp;
-    private String             target;
+    private Long timestamp;
+    private String target;
     private Map<String, Float> rates;
-    private boolean             success;
+    private boolean success;
 }

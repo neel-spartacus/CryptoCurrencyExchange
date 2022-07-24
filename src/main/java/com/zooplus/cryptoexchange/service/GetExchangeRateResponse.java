@@ -15,16 +15,17 @@ import java.util.List;
 @Builder
 public class GetExchangeRateResponse {
     public List<ExchangeRate> latestSearches;
-    public ExchangeRate       current;
-    public Issue              issue = Issue.NO_ISSUE;
-    
+    public ExchangeRate current;
+    public Issue issue = Issue.NO_ISSUE;
+
     public static enum Issue {
         NO_ISSUE(""),
-        NO_CONNECTION_TO_SERVER("Communication error with exchange rate server");
-        
+        NO_CONNECTION_TO_SERVER("Communication error with exchange rate server"),
+        NO_CURRENCY_FOUND_FOR_PROVIDED_IP("No currency found for the ip address provided");
+
         private final String message;
-        
-        Issue(String message){
+
+        Issue(String message) {
             this.message = message;
         }
 

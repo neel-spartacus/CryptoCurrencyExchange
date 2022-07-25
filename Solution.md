@@ -33,7 +33,9 @@ I have added a registration page as well along with login.Register once and then
 Logout so that the dropdown of currency defaults.
 
 I have used https://coinlayer.com/ to retrieve the real-time exchange rate for the crypto currency.
-Since its based on access-key, the provided one may have few tries left.
+Since its based on access-key, the provided one may have few tries left(approx.25)
+
+In case no ip address is provided,the text box is populated with the default ip address of the browser of the user.
 
 For convenience,I have used around 10 different type of crypto currencies.
 

@@ -1,0 +1,86 @@
+@import 'pure/0.6.0/pure-min.css';
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+header {
+    flex: none;
+}
+
+header form {
+    font-size: 10pt;
+    margin-top: 5px;
+    margin-right:20px;
+}
+
+header form input {
+    border: solid 1px #cad2d3;
+    border-radius: 3px;
+}
+
+footer {
+    flex: none;
+    background: linear-gradient(to bottom, transparent, #eaeded);
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 15px 20px 12px 20px;
+}
+
+footer ul    { margin:0; padding:0; list-style-type:none; }
+footer ul li { display:inline; margin-right:10px; }
+footer ul li a { color:rgb(69, 84, 69); text-decoration:none; }
+footer ul li a:hover { text-decoration: underline; }
+
+h1 {
+    background-image: url("images/zooplus_logo.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    height: 54px;
+    margin-left: 40px;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 40px;
+    color: rgb(69, 84, 69);
+    text-shadow: 2px 2px #d3d3d3;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(69, 84, 69);
+}
+
+article {
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(0, 64, 128);
+    font-size: 16pt;
+    padding: 20px 20px 20px 20px;
+}
+
+article a {
+    color: rgb(0, 64, 128);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(204, 0, 0);
+}
+
+button#logout {
+    border: none;
+    background-color: transparent; 
+    text-decoration: underline;
+}
+
+.button-main {
+    background: rgb(0, 127, 0);
+    color: white;
+}
